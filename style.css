@@ -12,10 +12,17 @@
   text-transform: uppercase;
   background-color: #FF8618;
   border: none;
+  -webkit-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
 }
 
 .button-primary:hover, header nav ul li:last-child button:hover {
   cursor: pointer;
+  background-color: #e97c16;
+}
+
+.button-primary:active, header nav ul li:last-child button:active {
+  background-color: #aa5d15;
 }
 
 header {

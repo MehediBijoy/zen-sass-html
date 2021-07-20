@@ -14,8 +14,13 @@ $popins: 'Popins', sans-serif;
     text-transform: uppercase;
     background-color: #FF8618;
     border: none;
+    transition: all ease-out 0.1s;
     &:hover {
         cursor: pointer;
+        background-color: #e97c16;
+    }
+    &:active {
+        background-color: #aa5d15;
     }
 }
 
