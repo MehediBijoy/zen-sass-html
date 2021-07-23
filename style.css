@@ -5,6 +5,15 @@
   padding: 0;
 }
 
+body {
+  background-color: #F8F9FE;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
 header {
   overflow: auto;
   width: 100%;
@@ -179,10 +188,16 @@ header .header-content .header-content-buttons .header-button-2 {
           align-items: center;
 }
 
-header .header-content .header-content-buttons .header-button-2 img {
-  padding: 10px 12px;
+header .header-content .header-content-buttons .header-button-2 div {
+  height: 15px;
+  width: 15px;
+  padding: 10px;
   border: 1px solid #fff;
   border-radius: 100%;
+}
+
+header .header-content .header-content-buttons .header-button-2 div > img {
+  margin-left: 3px;
 }
 
 header .header-content .header-content-buttons .header-button-2 p {
@@ -194,5 +209,184 @@ header .header-content .header-content-buttons .header-button-2 p {
 
 header .header-content .header-content-buttons .header-button-2:hover {
   cursor: pointer;
+}
+
+header .header-content .headers-footer {
+  margin: auto;
+  margin-top: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+header .header-content .headers-footer .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+header .header-content .headers-footer .active {
+  background-color: #e97c16 !important;
+}
+
+.about {
+  margin-top: 150px;
+  height: 525px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .left {
+  height: 100%;
+  width: 455px;
+  position: relative;
+}
+
+.about .left img:first-child {
+  position: relative;
+  width: 455px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .left img:last-child {
+  height: 290px;
+  width: 255px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-left: 30px;
+  padding-top: 30px;
+  border-top-left-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+}
+
+.about .right {
+  height: 100%;
+  width: 625px;
+}
+
+.about .right .text-1 {
+  color: #FC7C2C;
+  font-family: "Popins", sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.about .right .text-1:after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: #FC7C2C;
+  position: absolute;
+  margin-left: 10px;
+  left: auto;
+  top: 7px;
+}
+
+.about .right .text-1::before {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background: #FC7C2C;
+  position: absolute;
+  left: 105px;
+  top: 7px;
+}
+
+.about .right .text-2 {
+  color: #333333;
+  font-family: "Popins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.about .right .text-3 {
+  color: #666666;
+  font-family: "Chivo", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.about .right .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about .right .row .col {
+  margin-top: 30px;
+  margin-right: 70px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.about .right .row .col .rectangle {
+  border: 8px solid rgba(42, 34, 115, 0.2);
+  border-radius: 5px;
+}
+
+.about .right .row .col .rectangle span {
+  display: block;
+  height: 45px;
+  width: 45px;
+  background-color: #2a2273;
+}
+
+.about .right .row .col .col-content {
+  margin-left: 15px;
+}
+
+.about .right .row .col .col-content .col-text-1 {
+  font-family: "Popins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.about .right .row .col .col-content .col-text-2 {
+  font-family: "Chivo", sans-serif;
+  font-size: 16;
+  color: #666666;
+}
+
+.about .right .button {
+  width: 158px;
+  height: 50px;
+  color: #fff;
+  font-family: "Popins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #FF8618;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+  margin-top: 45px;
+}
+
+.about .right .button:hover {
+  cursor: pointer;
+  background-color: #e97c16;
+}
+
+.about .right .button:active {
+  background-color: #aa5d15;
 }
 /*# sourceMappingURL=style.css.map */
