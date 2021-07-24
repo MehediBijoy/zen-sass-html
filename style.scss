@@ -7,6 +7,7 @@
 
 body {
     background-color: #F8F9FE;
+    padding-bottom: 15rem;
 }
 
 $popins: 'Popins', sans-serif;
@@ -285,3 +286,113 @@ header {
     }
 }
 
+.service {
+    margin-top: 150px;
+    .title-small {
+        width: 50px;
+        margin: auto;
+        position: relative;
+        p {
+            font-family: $popins;
+            font-size: 14px;
+            color: #FC7C2C;
+            text-transform: capitalize;
+        }
+        &::before {
+            content: "";
+            height: 1px;
+            width: 30px;
+            background: #FC7C2C;
+            position: absolute;
+            top: 8px;
+            left: -38px;
+        }
+        &::after {
+            content: "";
+            height: 1px;
+            width: 30px;
+            background: #FC7C2C;
+            position: absolute;
+            top: 8px;
+            right: -32px;
+        }
+        span:nth-of-type(1){
+            width: 6px;
+            height: 1px;
+            background: #FC7C2C;
+            position: absolute;
+            top: 8px;
+            left: -50px;
+        }
+        span:nth-of-type(2) {
+            width: 6px;
+            height: 1px;
+            background: #FC7C2C;
+            position: absolute;
+            top: 8px;
+            right: -42px;
+        }
+    }
+    .title-main {
+        text-align: center;
+        font-family: $popins;
+        font-size: 40px;
+        font-weight: 600;
+        color: #333333;
+    }
+    .services-list {
+        margin-top: 40px;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        @mixin card ($r, $g, $b) {
+            height: 300px;
+            width: 360px;
+            background: #fff;
+            border-radius: 10px;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            .icon {
+                display: inline-flex;
+                border: 8px solid rgba($r, $g, $b, 0.2);
+                border-radius: 5px;
+                img {
+                    padding: 10px;
+                    background-color: rgb($r, $g, $b);
+                }
+            }
+            .card-title {
+                font-family: $popins;
+                font-size: 24px;
+                font-weight: 600;
+                color: #333333;
+                margin-top: 30px;
+            }
+            .card-text {
+                font-family: $chivo;
+                font-size: 16px;
+                color: #666666;
+                line-height: 28px;
+                margin-top: 20px;
+            }
+        }
+        .card-1 {
+            @include card(252, 124, 44)
+        }
+        .card-2 {
+            @include card(253, 71, 125)
+        }
+        .card-3 {
+            @include card(57, 241, 167)
+        }
+        .card-4 {
+            @include card(108, 86, 242)
+        }
+        .card-5 {
+            @include card(46, 129, 199)
+        }
+        .card-6 {
+            @include card(249, 194, 0)
+        }
+    }
+}

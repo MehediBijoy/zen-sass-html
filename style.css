@@ -7,6 +7,7 @@
 
 body {
   background-color: #F8F9FE;
+  padding-bottom: 15rem;
 }
 
 .container {
@@ -388,5 +389,312 @@ header .header-content .headers-footer .active {
 
 .about .right .button:active {
   background-color: #aa5d15;
+}
+
+.service {
+  margin-top: 150px;
+}
+
+.service .title-small {
+  width: 50px;
+  margin: auto;
+  position: relative;
+}
+
+.service .title-small p {
+  font-family: "Popins", sans-serif;
+  font-size: 14px;
+  color: #FC7C2C;
+  text-transform: capitalize;
+}
+
+.service .title-small::before {
+  content: "";
+  height: 1px;
+  width: 30px;
+  background: #FC7C2C;
+  position: absolute;
+  top: 8px;
+  left: -38px;
+}
+
+.service .title-small::after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  background: #FC7C2C;
+  position: absolute;
+  top: 8px;
+  right: -32px;
+}
+
+.service .title-small span:nth-of-type(1) {
+  width: 6px;
+  height: 1px;
+  background: #FC7C2C;
+  position: absolute;
+  top: 8px;
+  left: -50px;
+}
+
+.service .title-small span:nth-of-type(2) {
+  width: 6px;
+  height: 1px;
+  background: #FC7C2C;
+  position: absolute;
+  top: 8px;
+  right: -42px;
+}
+
+.service .title-main {
+  text-align: center;
+  font-family: "Popins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.service .services-list {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.service .services-list .card-1 {
+  height: 300px;
+  width: 360px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.service .services-list .card-1 .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 8px solid rgba(252, 124, 44, 0.2);
+  border-radius: 5px;
+}
+
+.service .services-list .card-1 .icon img {
+  padding: 10px;
+  background-color: #fc7c2c;
+}
+
+.service .services-list .card-1 .card-title {
+  font-family: "Popins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 30px;
+}
+
+.service .services-list .card-1 .card-text {
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #666666;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+.service .services-list .card-2 {
+  height: 300px;
+  width: 360px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.service .services-list .card-2 .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 8px solid rgba(253, 71, 125, 0.2);
+  border-radius: 5px;
+}
+
+.service .services-list .card-2 .icon img {
+  padding: 10px;
+  background-color: #fd477d;
+}
+
+.service .services-list .card-2 .card-title {
+  font-family: "Popins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 30px;
+}
+
+.service .services-list .card-2 .card-text {
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #666666;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+.service .services-list .card-3 {
+  height: 300px;
+  width: 360px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.service .services-list .card-3 .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 8px solid rgba(57, 241, 167, 0.2);
+  border-radius: 5px;
+}
+
+.service .services-list .card-3 .icon img {
+  padding: 10px;
+  background-color: #39f1a7;
+}
+
+.service .services-list .card-3 .card-title {
+  font-family: "Popins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 30px;
+}
+
+.service .services-list .card-3 .card-text {
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #666666;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+.service .services-list .card-4 {
+  height: 300px;
+  width: 360px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.service .services-list .card-4 .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 8px solid rgba(108, 86, 242, 0.2);
+  border-radius: 5px;
+}
+
+.service .services-list .card-4 .icon img {
+  padding: 10px;
+  background-color: #6c56f2;
+}
+
+.service .services-list .card-4 .card-title {
+  font-family: "Popins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 30px;
+}
+
+.service .services-list .card-4 .card-text {
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #666666;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+.service .services-list .card-5 {
+  height: 300px;
+  width: 360px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.service .services-list .card-5 .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 8px solid rgba(46, 129, 199, 0.2);
+  border-radius: 5px;
+}
+
+.service .services-list .card-5 .icon img {
+  padding: 10px;
+  background-color: #2e81c7;
+}
+
+.service .services-list .card-5 .card-title {
+  font-family: "Popins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 30px;
+}
+
+.service .services-list .card-5 .card-text {
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #666666;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+.service .services-list .card-6 {
+  height: 300px;
+  width: 360px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.service .services-list .card-6 .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 8px solid rgba(249, 194, 0, 0.2);
+  border-radius: 5px;
+}
+
+.service .services-list .card-6 .icon img {
+  padding: 10px;
+  background-color: #f9c200;
+}
+
+.service .services-list .card-6 .card-title {
+  font-family: "Popins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 30px;
+}
+
+.service .services-list .card-6 .card-text {
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #666666;
+  line-height: 28px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
