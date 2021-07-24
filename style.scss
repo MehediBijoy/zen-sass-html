@@ -13,6 +13,79 @@ body {
 $popins: 'Popins', sans-serif;
 $chivo: 'Chivo', sans-serif;
 
+@mixin title-half ($color) {
+    color: $color;
+    font-family: $popins;
+    font-size: 14px;
+    text-transform: capitalize;
+    position: relative;
+    &:after {
+        content: "";
+        width: 30px;
+        height: 1px;
+        background: $color;
+        position: absolute;
+        margin-left: 10px;
+        left: auto;
+        top: 7px;
+    }
+    &::before {
+        content: "";
+        width: 10px;
+        height: 1px;
+        background: $color;
+        position: absolute;
+        left: 105px;
+        top: 7px;
+    }
+}
+
+@mixin title-full ($color){
+    width: 50px;
+    margin: auto;
+    position: relative;
+    p {
+        font-family: $popins;
+        font-size: 14px;
+        color: $color;
+        text-transform: capitalize;
+    }
+    &::before {
+        content: "";
+        height: 1px;
+        width: 30px;
+        background: $color;
+        position: absolute;
+        top: 8px;
+        left: -38px;
+    }
+    &::after {
+        content: "";
+        height: 1px;
+        width: 30px;
+        background: $color;
+        position: absolute;
+        top: 8px;
+        right: -32px;
+    }
+    span:nth-of-type(1){
+        width: 6px;
+        height: 1px;
+        background: $color;
+        position: absolute;
+        top: 8px;
+        left: -50px;
+    }
+    span:nth-of-type(2) {
+        width: 6px;
+        height: 1px;
+        background: $color;
+        position: absolute;
+        top: 8px;
+        right: -42px;
+    }
+}
+
 @mixin button-primary ($width:100px) {
     width: $width;
     height: 50px;
@@ -206,30 +279,7 @@ header {
         height: 100%;
         width: 625px;
         .text-1 {
-            color: #FC7C2C;
-            font-family: $popins;
-            font-size: 14px;
-            text-transform: capitalize;
-            position: relative;
-            &:after {
-                content: "";
-                width: 30px;
-                height: 1px;
-                background: #FC7C2C;
-                position: absolute;
-                margin-left: 10px;
-                left: auto;
-                top: 7px;
-            }
-            &::before {
-                content: "";
-                width: 10px;
-                height: 1px;
-                background: #FC7C2C;
-                position: absolute;
-                left: 105px;
-                top: 7px;
-            }
+            @include title-half(#FC7C2C)
         }
         .text-2 {
             color: #333333;
@@ -289,49 +339,7 @@ header {
 .service {
     margin-top: 150px;
     .title-small {
-        width: 50px;
-        margin: auto;
-        position: relative;
-        p {
-            font-family: $popins;
-            font-size: 14px;
-            color: #FC7C2C;
-            text-transform: capitalize;
-        }
-        &::before {
-            content: "";
-            height: 1px;
-            width: 30px;
-            background: #FC7C2C;
-            position: absolute;
-            top: 8px;
-            left: -38px;
-        }
-        &::after {
-            content: "";
-            height: 1px;
-            width: 30px;
-            background: #FC7C2C;
-            position: absolute;
-            top: 8px;
-            right: -32px;
-        }
-        span:nth-of-type(1){
-            width: 6px;
-            height: 1px;
-            background: #FC7C2C;
-            position: absolute;
-            top: 8px;
-            left: -50px;
-        }
-        span:nth-of-type(2) {
-            width: 6px;
-            height: 1px;
-            background: #FC7C2C;
-            position: absolute;
-            top: 8px;
-            right: -42px;
-        }
+        @include title-full(#FC7C2C)
     }
     .title-main {
         text-align: center;
@@ -393,6 +401,294 @@ header {
         }
         .card-6 {
             @include card(249, 194, 0)
+        }
+    }
+}
+
+.analysis {
+    margin-top: 150px;
+    height: 525px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .left {
+        width: 515px;
+        margin-top: 40px;
+
+        .text-1 {
+            @include title-half(#FC7C2C)
+        }
+        .text-2 {
+            font-family: $popins;
+            font-size: 40px;
+            font-weight: 600;
+            color: #071735;
+        }
+        .text-3 {
+            font-family: $chivo;
+            font-size: 18px;
+            color: #5F6B78;
+            margin-top: 20px;
+            margin-bottom: 35px;
+        }
+        ul {
+            list-style: none;
+            li {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 25px;
+                .check {
+                    height: 30px;
+                    width: 30px;
+                    background-color: rgba($color: #FC7C2C, $alpha: 0.15);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                }
+                p {
+                    font-family: $chivo;
+                    font-size: 16px;
+                    color: #5F6B78;
+                }
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        button {
+            margin-top: 45px;
+            @include button-primary(158px)
+        }
+    }
+    .right {
+        width: 515px;
+        background: linear-gradient(rgba($color: #2A2273, $alpha: 0.40)), url(./assets/analysis/Image129.png) no-repeat top center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        .icon {
+            border: 10px solid rgba($color: #fff, $alpha: 0.3);
+            border-radius: 50%;
+            div {
+                height: 60px;
+                width: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #FC7C2C;
+                border-radius: 50%;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.project {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title-small {
+        @include title-full(#FC7C2C)
+    }
+    .title-main {
+        font-family: $popins;
+        font-size: 40px;
+        font-weight: 600;
+        color: #333;
+        text-align: center;
+    }
+    .grid {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+        .item {
+            height: 350px;
+            width: 360px;
+            position: relative;
+            div {
+                width: 310px;
+                height: 75px;
+                position: absolute;
+                margin: 0px 25px;
+                padding: 11px 25px;
+                bottom: 10px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-sizing: border-box;
+                :first-child {
+                    font-family: $popins;
+                    font-weight: 600;
+                    font-size: 22px;
+                    color: #333333;
+                }
+                :last-child {
+                    font-family: $chivo;
+                    font-size: 16px;
+                    color: #333333;
+                }
+                &::before {
+                    content: "";
+                    height: 35px;
+                    width: 1px;
+                    position: absolute;
+                    background-color: #333333;
+                    top: 18px;
+                    left: 15px;
+                }
+            }
+        }
+        img {
+            height: 350px;
+            width: 360px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+    button {
+        margin-top: 50px;
+        @include button-primary(158px);
+    }
+}
+
+.success {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-color: #2A2273;
+    padding: 80px 0px;
+    box-sizing: border-box;
+    .title-small {
+        @include title-full(#fff)
+    }
+    .title-main {
+        font-family: $popins;
+        font-size: 40px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+    }
+    .grid {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .item {
+            display: flex;
+            flex-direction: column;
+            //justify-content: center;
+            align-items: center;
+            img {
+                height: 35px;
+                width: 35px;
+            }
+            .number {
+                font-family: $popins;
+                font-size: 30px;
+                color: #fff;
+                margin-top: 10px;
+            }
+            .text {
+                font-family: $chivo;
+                font-size: 16px;
+                color: #fff;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+.feedback {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .left {
+        width: 510px;
+        padding: 25px 0;
+        .text-1 {
+            @include title-half(#FC7C2C)
+        }
+        .text-2 {
+            font-family: $popins;
+            font-size: 40px;
+            font-weight: 600;
+            color: #333333;
+        }
+        .text-3 {
+            font-family: $chivo;
+            font-size: 16px;
+            color: #666;
+            margin-top: 30px;
+        }
+        .footer {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button {
+                @include button-primary(147px)
+            }
+            .arrows {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+    }
+    .right {
+        width: 530px;
+        height: 350px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 40px 40px 30px;
+        box-sizing: border-box;
+        .head {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 25px;
+            img {
+                height: 80px;
+                width: 80px;
+                object-fit: none;
+                object-position: 60% 5%;
+                border-radius: 50%;
+            }
+            p:nth-of-type(1) {
+                font-family: $popins;
+                font-size: 22px;
+                font-weight: 500;
+                color: #333;
+            }
+            p:nth-of-type(2) {
+                margin-top: 10px;
+                font-family: $chivo;
+                font-size: 16px;
+                color: #666;
+            }
+        }
+        .content-text {
+            margin-top: 25px;
+            font-family: $chivo;
+            font-size: 20px;
+            line-height: 34px;
+            color: #666666;
+        }
+        .footer {
+            float: right;
+            margin-right: 20px;
         }
     }
 }

@@ -697,4 +697,621 @@ header .header-content .headers-footer .active {
   line-height: 28px;
   margin-top: 20px;
 }
+
+.analysis {
+  margin-top: 150px;
+  height: 525px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.analysis .left {
+  width: 515px;
+  margin-top: 40px;
+}
+
+.analysis .left .text-1 {
+  color: #FC7C2C;
+  font-family: "Popins", sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.analysis .left .text-1:after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: #FC7C2C;
+  position: absolute;
+  margin-left: 10px;
+  left: auto;
+  top: 7px;
+}
+
+.analysis .left .text-1::before {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background: #FC7C2C;
+  position: absolute;
+  left: 105px;
+  top: 7px;
+}
+
+.analysis .left .text-2 {
+  font-family: "Popins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #071735;
+}
+
+.analysis .left .text-3 {
+  font-family: "Chivo", sans-serif;
+  font-size: 18px;
+  color: #5F6B78;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.analysis .left ul {
+  list-style: none;
+}
+
+.analysis .left ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.analysis .left ul li .check {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(252, 124, 44, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.analysis .left ul li p {
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #5F6B78;
+}
+
+.analysis .left ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.analysis .left button {
+  margin-top: 45px;
+  width: 158px;
+  height: 50px;
+  color: #fff;
+  font-family: "Popins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #FF8618;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+
+.analysis .left button:hover {
+  cursor: pointer;
+  background-color: #e97c16;
+}
+
+.analysis .left button:active {
+  background-color: #aa5d15;
+}
+
+.analysis .right {
+  width: 515px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 34, 115, 0.4))), url(./assets/analysis/Image129.png) no-repeat top center;
+  background: linear-gradient(rgba(42, 34, 115, 0.4)), url(./assets/analysis/Image129.png) no-repeat top center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.analysis .right .icon {
+  border: 10px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.analysis .right .icon div {
+  height: 60px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FC7C2C;
+  border-radius: 50%;
+}
+
+.analysis .right .icon:hover {
+  cursor: pointer;
+}
+
+.project {
+  width: 100%;
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project .title-small {
+  width: 50px;
+  margin: auto;
+  position: relative;
+}
+
+.project .title-small p {
+  font-family: "Popins", sans-serif;
+  font-size: 14px;
+  color: #FC7C2C;
+  text-transform: capitalize;
+}
+
+.project .title-small::before {
+  content: "";
+  height: 1px;
+  width: 30px;
+  background: #FC7C2C;
+  position: absolute;
+  top: 8px;
+  left: -38px;
+}
+
+.project .title-small::after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  background: #FC7C2C;
+  position: absolute;
+  top: 8px;
+  right: -32px;
+}
+
+.project .title-small span:nth-of-type(1) {
+  width: 6px;
+  height: 1px;
+  background: #FC7C2C;
+  position: absolute;
+  top: 8px;
+  left: -50px;
+}
+
+.project .title-small span:nth-of-type(2) {
+  width: 6px;
+  height: 1px;
+  background: #FC7C2C;
+  position: absolute;
+  top: 8px;
+  right: -42px;
+}
+
+.project .title-main {
+  font-family: "Popins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.project .grid {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project .grid .item {
+  height: 350px;
+  width: 360px;
+  position: relative;
+}
+
+.project .grid .item div {
+  width: 310px;
+  height: 75px;
+  position: absolute;
+  margin: 0px 25px;
+  padding: 11px 25px;
+  bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.project .grid .item div :first-child {
+  font-family: "Popins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #333333;
+}
+
+.project .grid .item div :last-child {
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+.project .grid .item div::before {
+  content: "";
+  height: 35px;
+  width: 1px;
+  position: absolute;
+  background-color: #333333;
+  top: 18px;
+  left: 15px;
+}
+
+.project .grid img {
+  height: 350px;
+  width: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.project button {
+  margin-top: 50px;
+  width: 158px;
+  height: 50px;
+  color: #fff;
+  font-family: "Popins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #FF8618;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+
+.project button:hover {
+  cursor: pointer;
+  background-color: #e97c16;
+}
+
+.project button:active {
+  background-color: #aa5d15;
+}
+
+.success {
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  background-color: #2A2273;
+  padding: 80px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.success .title-small {
+  width: 50px;
+  margin: auto;
+  position: relative;
+}
+
+.success .title-small p {
+  font-family: "Popins", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.success .title-small::before {
+  content: "";
+  height: 1px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  top: 8px;
+  left: -38px;
+}
+
+.success .title-small::after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  top: 8px;
+  right: -32px;
+}
+
+.success .title-small span:nth-of-type(1) {
+  width: 6px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 8px;
+  left: -50px;
+}
+
+.success .title-small span:nth-of-type(2) {
+  width: 6px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 8px;
+  right: -42px;
+}
+
+.success .title-main {
+  font-family: "Popins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+.success .grid {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.success .grid .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.success .grid .item img {
+  height: 35px;
+  width: 35px;
+}
+
+.success .grid .item .number {
+  font-family: "Popins", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.success .grid .item .text {
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.feedback {
+  margin-top: 150px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback .left {
+  width: 510px;
+  padding: 25px 0;
+}
+
+.feedback .left .text-1 {
+  color: #FC7C2C;
+  font-family: "Popins", sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.feedback .left .text-1:after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: #FC7C2C;
+  position: absolute;
+  margin-left: 10px;
+  left: auto;
+  top: 7px;
+}
+
+.feedback .left .text-1::before {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background: #FC7C2C;
+  position: absolute;
+  left: 105px;
+  top: 7px;
+}
+
+.feedback .left .text-2 {
+  font-family: "Popins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.feedback .left .text-3 {
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #666;
+  margin-top: 30px;
+}
+
+.feedback .left .footer {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback .left .footer button {
+  width: 147px;
+  height: 50px;
+  color: #fff;
+  font-family: "Popins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #FF8618;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+
+.feedback .left .footer button:hover {
+  cursor: pointer;
+  background-color: #e97c16;
+}
+
+.feedback .left .footer button:active {
+  background-color: #aa5d15;
+}
+
+.feedback .left .footer .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.feedback .right {
+  width: 530px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px 40px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.feedback .right .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.feedback .right .head img {
+  height: 80px;
+  width: 80px;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: 60% 5%;
+     object-position: 60% 5%;
+  border-radius: 50%;
+}
+
+.feedback .right .head p:nth-of-type(1) {
+  font-family: "Popins", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+}
+
+.feedback .right .head p:nth-of-type(2) {
+  margin-top: 10px;
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+.feedback .right .content-text {
+  margin-top: 25px;
+  font-family: "Chivo", sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+  color: #666666;
+}
+
+.feedback .right .footer {
+  float: right;
+  margin-right: 20px;
+}
 /*# sourceMappingURL=style.css.map */
