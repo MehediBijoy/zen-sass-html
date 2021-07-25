@@ -396,7 +396,16 @@ header .header-content .headers-footer .active {
 }
 
 .service .title-small {
-  width: 50px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
   position: relative;
 }
@@ -408,24 +417,24 @@ header .header-content .headers-footer .active {
   text-transform: capitalize;
 }
 
-.service .title-small::before {
+.service .title-small p:before {
   content: "";
   height: 1px;
   width: 30px;
   background: #FC7C2C;
   position: absolute;
   top: 8px;
-  left: -38px;
+  left: -30px;
 }
 
-.service .title-small::after {
+.service .title-small p:after {
   content: "";
   height: 1px;
   width: 30px;
   background: #FC7C2C;
   position: absolute;
   top: 8px;
-  right: -32px;
+  right: -30px;
 }
 
 .service .title-small span:nth-of-type(1) {
@@ -434,7 +443,7 @@ header .header-content .headers-footer .active {
   background: #FC7C2C;
   position: absolute;
   top: 8px;
-  left: -50px;
+  left: -40px;
 }
 
 .service .title-small span:nth-of-type(2) {
@@ -443,7 +452,7 @@ header .header-content .headers-footer .active {
   background: #FC7C2C;
   position: absolute;
   top: 8px;
-  right: -42px;
+  right: -40px;
 }
 
 .service .title-main {
@@ -887,7 +896,16 @@ header .header-content .headers-footer .active {
 }
 
 .project .title-small {
-  width: 50px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
   position: relative;
 }
@@ -899,24 +917,24 @@ header .header-content .headers-footer .active {
   text-transform: capitalize;
 }
 
-.project .title-small::before {
+.project .title-small p:before {
   content: "";
   height: 1px;
   width: 30px;
   background: #FC7C2C;
   position: absolute;
   top: 8px;
-  left: -38px;
+  left: -30px;
 }
 
-.project .title-small::after {
+.project .title-small p:after {
   content: "";
   height: 1px;
   width: 30px;
   background: #FC7C2C;
   position: absolute;
   top: 8px;
-  right: -32px;
+  right: -30px;
 }
 
 .project .title-small span:nth-of-type(1) {
@@ -925,7 +943,7 @@ header .header-content .headers-footer .active {
   background: #FC7C2C;
   position: absolute;
   top: 8px;
-  left: -50px;
+  left: -40px;
 }
 
 .project .title-small span:nth-of-type(2) {
@@ -934,7 +952,7 @@ header .header-content .headers-footer .active {
   background: #FC7C2C;
   position: absolute;
   top: 8px;
-  right: -42px;
+  right: -40px;
 }
 
 .project .title-main {
@@ -1043,7 +1061,16 @@ header .header-content .headers-footer .active {
 }
 
 .success .title-small {
-  width: 50px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
   position: relative;
 }
@@ -1055,24 +1082,24 @@ header .header-content .headers-footer .active {
   text-transform: capitalize;
 }
 
-.success .title-small::before {
+.success .title-small p:before {
   content: "";
   height: 1px;
   width: 30px;
   background: #fff;
   position: absolute;
   top: 8px;
-  left: -38px;
+  left: -30px;
 }
 
-.success .title-small::after {
+.success .title-small p:after {
   content: "";
   height: 1px;
   width: 30px;
   background: #fff;
   position: absolute;
   top: 8px;
-  right: -32px;
+  right: -30px;
 }
 
 .success .title-small span:nth-of-type(1) {
@@ -1081,7 +1108,7 @@ header .header-content .headers-footer .active {
   background: #fff;
   position: absolute;
   top: 8px;
-  left: -50px;
+  left: -40px;
 }
 
 .success .title-small span:nth-of-type(2) {
@@ -1090,7 +1117,7 @@ header .header-content .headers-footer .active {
   background: #fff;
   position: absolute;
   top: 8px;
-  right: -42px;
+  right: -40px;
 }
 
 .success .title-main {
