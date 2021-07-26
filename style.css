@@ -8,7 +8,6 @@
 body, html {
   overflow-x: hidden;
   background-color: #F8F9FE;
-  padding-bottom: 15rem;
 }
 
 .shadow {
@@ -1571,5 +1570,214 @@ header .header-content .headers-footer .active {
   font-family: "Chivo", sans-serif;
   font-size: 16px;
   color: #666;
+}
+
+.blog .booster-bar {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog .dot-div {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog .dot-div .dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bec0ca;
+  border-radius: 50%;
+}
+
+.blog .dot-div .active {
+  background-color: #FF8618;
+}
+
+.footer-end {
+  overflow: hidden;
+  margin-top: 100px;
+  height: 435px;
+  width: 100%;
+  background-color: #0A053E;
+}
+
+.footer-end .grid {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-end .grid .content-1 {
+  width: 320px;
+}
+
+.footer-end .grid .content-1 .title {
+  font-family: "Popins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-end .grid .content-1 .text {
+  margin-top: 30px;
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-end .grid .content-1 .icon-list {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 15px;
+}
+
+.footer-end .grid .content-1 .icon-list div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-end .grid .content-1 .icon-list .active {
+  background-color: #FC7C2C;
+  border: 1px solid #FC7C2C;
+}
+
+.footer-end .grid .content-2, .footer-end .grid .content-3 {
+  width: 65px;
+}
+
+.footer-end .grid .content-2 .title, .footer-end .grid .content-3 .title {
+  font-family: "Popins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-end .grid .content-2 .list, .footer-end .grid .content-3 .list {
+  margin-top: 42px;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 19px;
+}
+
+.footer-end .grid .content-2 .list a, .footer-end .grid .content-3 .list a {
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-end .grid .content-3 {
+  width: 140px;
+}
+
+.footer-end .grid .content-4 {
+  width: 320px;
+}
+
+.footer-end .grid .content-4 .title {
+  font-family: "Popins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-end .grid .content-4 .text {
+  margin-top: 42px;
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-end .grid .content-4 .input {
+  margin-top: 15px;
+  width: 100%;
+  height: 50px;
+  padding: 0px 14px 0px 25px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer-end .grid .content-4 .input input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  outline: none;
+  border: none;
+}
+
+.footer-end .grid .content-4 .input .icon {
+  height: 40px;
+  width: 40px;
+  background-color: #FF8618;
+  border-radius: 50%;
+}
+
+.footer-end .grid .content-4 .input .icon img {
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+.footer-end .hr-line {
+  margin-top: 30px;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.footer-end .footer-text {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Chivo", sans-serif;
+  font-size: 16px;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
